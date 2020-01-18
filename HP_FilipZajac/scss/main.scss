@@ -46,11 +46,10 @@ img {
   background: $dark-color;
   color: #fff;
   justify-content: space-between;
-  //padding-top: 1rem;
   display: flex;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 
   ul {
     display: flex;
@@ -106,9 +105,9 @@ img {
   }
 }
 
-// Home Sections
+// Home
 #home {
-  //Home Section A
+  //Home Section
   &-a {
     .specials {
       margin-top: 3rem;
@@ -124,96 +123,11 @@ img {
       }
     }
   }
-
-  // Home Section B
-  &-b {
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-
-      li {
-        line-height: 2;
-
-        &.stats-title {
-          font-size: 1.5rem;
-        }
-
-        &.stats-number {
-          font-size: 2rem;
-          font-weight: bold;
-        }
-      }
-
-      div {
-        padding: 3rem 0;
-
-        &:nth-child(odd) {
-          background: $light-color;
-        }
-
-        &:nth-child(even) {
-          background: $medium-color;
-        }
-      }
-    }
-  }
-
-  // Home Section C
-  &-c {
-    .process {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1.5rem;
-      text-align: center;
-
-      // process-step
-      &-step {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 28px;
-        background: $main-color;
-        color: set-text-color($main-color);
-        border-radius: 50%;
-        height: 15px;
-        width: 15px;
-        line-height: 15px;
-        padding: 1rem;
-        transition: all 1s;
-      }
-
-      // process-icon
-      &-icon {
-        border-radius: 50%;
-        background: $dark-color;
-        color: set-text-color($dark-color);
-        padding: 2rem;
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-        text-align: center;
-        position: relative;
-        transition: all 1s;
-
-        &:hover {
-          background: $main-color;
-          width: 90px;
-          height: 90px;
-          line-height: 90px;
-
-          .process-step {
-            background: $dark-color;
-            color: set-text-color($dark-color);
-          }
-        }
-      }
-    }
-  }
 }
 
-// About Sections
+// About
 #about {
-  // About A
+  // Info
   &-a {
     .about-info {
       display: grid;
@@ -254,39 +168,8 @@ img {
     }
   }
 
-  // About B
+  //Testimonials
   &-b {
-    .progress {
-      overflow: hidden;
-      height: 20px;
-      background: $medium-color;
-      border-radius: 5px;
-      margin-bottom: 0.6rem;
-
-      div {
-        height: 100%;
-        color: #fff;
-        text-align: center;
-        background: $main-color;
-      }
-    }
-  }
-
-  // About C
-  &-c {
-    .about-logos {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-
-      img {
-        width: 70%;
-      }
-    }
-  }
-
-  //About D
-  &-d {
     .testimonials {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -315,55 +198,19 @@ img {
   }
 }
 
-// Contact Page
+// Contact
 #contact {
   &-a {
-    .text-fields {
-      display: grid;
-      grid-template-areas:
-        "name email"
-        "subject phone"
-        "message message";
-      grid-gap: 1.2rem;
-      margin-bottom: 1.2rem;
-
-      // Grid Areas
-      .name-input {
-        grid-area: name;
-      }
-      .subject-input {
-        grid-area: subject;
-      }
-      .email-input {
-        grid-area: email;
-      }
-      .phone-input {
-        grid-area: phone;
-      }
-      .message-input {
-        grid-area: message;
-        height: 100px;
-      }
-
-      .text-input {
-        padding: 0.5rem 1rem;
-      }
-    }
-
-    button[type="submit"] {
-      width: 50%;
-    }
-  }
-
-  &-b {
     .contact-info {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       text-align: center;
     }
   }
 
-  &-c {
+  &-b {
+    background: $light-color;
+    color: $main-color;
     h1 {
       text-align: center;
       font-size: 4rem;
@@ -376,6 +223,11 @@ img {
   background: $dark-color;
   color: #fff;
   height: 5rem;
+
+  .copyright a {
+    text-decoration: none;
+    color: rgb(124, 47, 98);
+  }
 
   .footer-content {
     display: flex;

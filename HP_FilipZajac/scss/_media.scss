@@ -15,8 +15,22 @@
     flex-direction: column;
     align-items: center;
 
+    img {
+      display: none;
+    }
+
+    ul {
+      margin-top: 0.6rem;
+      display: block;
+    }
+
     li {
-      padding: 1rem;
+      padding: 0.2rem;
+      text-align: center;
+    }
+
+    a {
+      border: none;
     }
   }
 
@@ -39,16 +53,13 @@
 
   // Stack Grid Columns
   #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
-  #about-d .testimonials,
-  #contact-b .contact-info,
+  #about-b .testimonials,
+  #contact-a .contact-info,
   .items {
     grid-template-columns: 1fr;
   }
 
   // Home
-
   #home {
     &-a {
       .specials div {
@@ -59,12 +70,6 @@
           border: none;
           padding-bottom: 0;
         }
-      }
-    }
-
-    &-b {
-      .stats div {
-        padding: 2rem 0 1rem 0;
       }
     }
   }
@@ -81,26 +86,11 @@
           "aw3";
       }
     }
-
-    &-c {
-      display: none;
-    }
   }
 
   // Contact
   #contact {
     &-a {
-      .text-fields {
-        grid-template-areas:
-          "name"
-          "subject"
-          "email"
-          "phone"
-          "message";
-      }
-    }
-
-    &-b {
       div {
         margin-bottom: 1rem;
         padding-bottom: 1rem;
@@ -114,7 +104,7 @@
       }
     }
 
-    &-c {
+    &-b {
       h1 {
         font-size: 2rem;
       }
