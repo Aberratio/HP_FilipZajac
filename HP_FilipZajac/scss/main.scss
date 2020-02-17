@@ -198,6 +198,44 @@ img {
   }
 }
 
+//Work
+#work {
+  &-b {
+    max-width: 800px;
+    padding: auto;
+    margin: auto;
+
+    .poem-2box-container {
+      display: grid;
+      grid-template-columns: repeat(2, 3fr);
+      grid-gap: 1rem;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    hr {
+      border: 0.5px solid $medium-color;
+      margin-bottom: 20px;
+    }
+
+    .poem-title {
+      padding-top: 10px;
+    }
+
+    .poem-center {
+      padding: 20px 30px;
+    }
+
+    .poem-box {
+      margin-bottom: 30px;
+      border: 1px solid $medium-color;
+      border-radius: 5px;
+    }
+  }
+}
+
 // Contact
 #contact {
   &-a {

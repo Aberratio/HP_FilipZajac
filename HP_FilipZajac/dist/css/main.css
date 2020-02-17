@@ -273,6 +273,28 @@ img {
     border-radius: 50px;
     margin-right: 0.5rem; }
 
+#work-b {
+  max-width: 800px;
+  padding: auto;
+  margin: auto; }
+  #work-b .poem-2box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-gap: 1rem; }
+  #work-b h2 {
+    text-align: center; }
+  #work-b hr {
+    border: 0.5px solid #ff9751;
+    margin-bottom: 20px; }
+  #work-b .poem-title {
+    padding-top: 10px; }
+  #work-b .poem-center {
+    padding: 20px 30px; }
+  #work-b .poem-box {
+    margin-bottom: 30px;
+    border: 1px solid #ff9751;
+    border-radius: 5px; }
+
 #contact-a .contact-info {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -344,6 +366,7 @@ img {
   #home-a .specials,
   #about-b .testimonials,
   #contact-a .contact-info,
+  #work-b .poem-2box-container,
   .items {
     grid-template-columns: 1fr; }
 
